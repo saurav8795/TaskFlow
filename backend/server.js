@@ -16,11 +16,8 @@ const app = express();
 // Connect to database
 connectDB();
 
-// Middleware
-app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
-  credentials: true
-}));
+// Middleware - Completely opened CORS to allow all cross-origin requests for deployment verification
+app.use(cors());
 app.use(express.json());
 
 // API Routes
