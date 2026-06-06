@@ -1,5 +1,5 @@
-// API Base URL - uses environment variable or relative path for production
-const API_BASE = import.meta.env.VITE_API_URL || '/api';
+// API Base URL - Pointed directly to your live Railway production server
+const API_BASE = import.meta.env.VITE_API_URL || 'https://taskflow-production-e023.up.railway.app/api';
 
 // Token storage
 const TOKEN_KEY = 'taskflow_token';
